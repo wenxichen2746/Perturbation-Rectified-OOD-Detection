@@ -1,6 +1,15 @@
 # Leveraging Perturbation Robustness to Enhance Out-of-Distribution Detection
+In this work, we propose a post-hoc method, Perturbation-Rectified OOD detection (\ours), based on the insight that prediction confidence for OOD inputs is more susceptible to reduction under perturbation than in-distribution (IND) inputs.
+![Landscape of score function differ between IND and OOD inputs](figures/landscapes.png)
+Based on the observation, we proposed an adversarial score function that searches for local minimum scores near original inputs by applying gradient descent. 
 
-![Alt text](figures/pipelines.png)
+![PRO algorithm pipeline](figures/pipeline.png)
+The perturbation procedure enhances the separability between IND and OOD samples.
+![Perturbation minize OOD score while keep IND score invariant](figures/proexample.png)
+Our approach further pushes the limit of softmax-based OOD detection and is the leading post-hoc method for small-scale models. On a CIFAR-10 model with adversarial training,
+PRO effectively detects near-OOD inputs, achieving a reduction of more than 10% on FPR@95 compared to state-of-the-art methods.
+
+![OOD detection performance on Cifar-10 near-OOD](figures/teasor.png)
 
 ## Code Implementation
 
