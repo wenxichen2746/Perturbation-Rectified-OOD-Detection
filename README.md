@@ -10,21 +10,21 @@ In this work, we propose a post-hoc method, Perturbation-Rectified OOD detection
 Based on the observation, we proposed an adversarial score function that searches for local minimum scores near original inputs by applying gradient descent. 
 
 <div align="center">
-  <img src="figures/pipeline.png" width="800">
+  <img src="figures/pipeline.png" width="500">
   <p><strong>Figure 2:</strong> PRO algorithm pipeline.</p>
 </div>
 
 The perturbation procedure enhances the separability between IND and OOD samples.
 
 <div align="center">
-  <img src="figures/proexample.png" width="800">
+  <img src="figures/proexample.png" width="500">
   <p><strong>Figure 3:</strong> Perturbation minimizes OOD scores while keeping IND scores invariant.</p>
 </div>
 
 Our approach further pushes the limit of softmax-based OOD detection and is the leading post-hoc method for small-scale models. On a CIFAR-10 model with adversarial training, PRO effectively detects near-OOD inputs, achieving a reduction of more than 10% on FPR@95 compared to state-of-the-art methods.
 
 <div align="center">
-  <img src="figures/teasor.png" width="800">
+  <img src="figures/teasor.png" width="500">
   <p><strong>Figure 4:</strong> OOD detection performance on CIFAR-10 near-OOD.</p>
 </div>
 
