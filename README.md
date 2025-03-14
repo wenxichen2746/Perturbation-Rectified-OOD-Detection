@@ -1,10 +1,15 @@
 # Leveraging Perturbation Robustness to Enhance Out-of-Distribution Detection
 
+![Alt text](figures/PROpipelines.pdf)
+
+## Code Implementation
+
 This repository aims to help reproduce the results from our paper for CVPR2025 ["Leveraging Perturbation Robustness to Enhance Out-of-Distribution Detection"](https://cvpr.thecvf.com/virtual/2025/poster/32402).
 
 The repository is modified from the code of two benchmarks: [OpenOOD](https://github.com/Jingkang50/OpenOOD) and [RobustBench](https://github.com/RobustBench/robustbench). For detailed instructions on using these packages, please refer to their original GitHub pages.
 
 ---
+
 
 ## Installation
 
