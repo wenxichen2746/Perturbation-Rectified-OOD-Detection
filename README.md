@@ -1,6 +1,6 @@
 # Leveraging Perturbation Robustness to Enhance Out-of-Distribution Detection
 
-![Alt text](figures/PROpipelines.pdf)
+![Alt text](figures/pipelines.png)
 
 ## Code Implementation
 
