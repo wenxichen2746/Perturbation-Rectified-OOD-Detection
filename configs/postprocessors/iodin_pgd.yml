@@ -1,0 +1,10 @@
+postprocessor:
+  name: iodin_gd
+  APS_mode: True
+  postprocessor_args:
+    temperature: 1000
+    noise_level: 0.0014
+  postprocessor_sweep:
+    noise_level: [0.0001,0.0005,0.001,0.005]
+    #noise_level: [0.0004,0.0008,0.0012,0.0016]
+    gd_steps: [1,2,3,4]

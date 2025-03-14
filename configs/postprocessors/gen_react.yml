@@ -1,0 +1,11 @@
+postprocessor:
+  name: gen_react
+  APS_mode: True
+  postprocessor_args:
+    percentile: 90
+    gamma: 0.1
+    M: 100
+  postprocessor_sweep:
+    percentile_list: [85, 90, 95, 99]
+    gamma_list: [0.01,0.1,0.5,5]
+    M_list: [500] #imagenet

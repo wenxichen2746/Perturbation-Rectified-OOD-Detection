@@ -1,0 +1,11 @@
+postprocessor:
+  name: pro_gen
+  APS_mode: True
+  postprocessor_args:
+    gamma: 0.1
+    M: 100
+  postprocessor_sweep:
+    gamma_list: [0.01,0.1,0.3,0.5]
+    M_list: [10,50,100] # [5,7,10] #cifar10
+    noise_level: [0.0003,0.0005,0.0008,0.001]
+    gd_steps:  [1,2,3,5]

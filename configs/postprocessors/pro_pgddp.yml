@@ -1,0 +1,9 @@
+postprocessor:
+  name: pro_pgddp
+  APS_mode: True
+  postprocessor_args:
+    temperature: 1
+    noise_level: 0.001
+  postprocessor_sweep:
+    noise_level: [0.0005]
+    gd_steps: [1]

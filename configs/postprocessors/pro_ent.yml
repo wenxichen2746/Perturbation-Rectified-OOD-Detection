@@ -1,0 +1,8 @@
+postprocessor:
+  name: pro_ent
+  APS_mode: True
+  postprocessor_args:
+    noise_level: 0.0014
+  postprocessor_sweep:
+    noise_level: [0.0001,0.0005,0.001,0.005,0.01,0.02,0.03]
+    gd_steps: [1,2,3,4]

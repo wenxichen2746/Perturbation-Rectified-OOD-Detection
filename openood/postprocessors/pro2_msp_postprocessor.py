@@ -1,0 +1,60 @@
+"""Adapted from: https://github.com/facebookresearch/odin."""
+from typing import Any
+
+import torch
+import torch.nn as nn
+
+from .base_postprocessor import BasePostprocessor
+from openood.preprocessors.transform import normalization_dict
+
+class PROv2_MSP_Postprocessor(BasePostprocessor):
+    def __init__(self, config):
+        self.APS_mode = True
+        self.hyperparam_search_done = False
+        super().__init__(config)
+        self.args = self.config.postprocessor.postprocessor_args
+
+        self.temperature = self.args.temperature
+        self.noise_level = self.args.noise_level
+        self.gd_steps=1
+        try:
+            self.input_std = normalization_dict[self.config.dataset.name][1]
+        except KeyError:
+            self.input_std = [0.5, 0.5, 0.5]
+        self.args_dict = self.config.postprocessor.postprocessor_sweep
+        
+
+    def postprocess(self, net: nn.Module, data: Any):
+        #data.requires_grad = True
+
+        tempInputs=data.clone().detach()
+        #criterion = nn.CrossEntropyLoss()
+        conf_record = [] 
+        for step in range(self.gd_steps):
+            tempInputs.requires_grad=True
+            output = net(tempInputs)
+            score = torch.softmax(output / self.temperature, dim=1)
+            conf, pred = torch.max(score, dim=1)
+            conf_record.append(conf.detach().clone())
+            if step==0:
+                unperturbed_pred = pred
+            loss = conf.mean()
+            loss.backward()
+            gradient = tempInputs.grad.data
+            tempInputs = torch.add(tempInputs.detach(), gradient.sign(), alpha=-self.noise_level) # decrease msp
+
+        output = net(tempInputs)
+        score = torch.softmax(output / self.temperature, dim=1)
+        conf, pred = torch.max(score, dim=1)
+        conf_record.append(conf.detach().clone())
+        conf_record_tensor = torch.stack(conf_record, dim=0)
+        min_conf = conf_record_tensor.min(dim=0).values
+        return unperturbed_pred, min_conf
+
+    def set_hyperparam(self, hyperparam: list):
+        #self.temperature = hyperparam[0]
+        self.noise_level = hyperparam[0]
+        self.gd_steps=hyperparam[1]
+
+    def get_hyperparam(self):
+        return [self.noise_level, self.gd_steps]

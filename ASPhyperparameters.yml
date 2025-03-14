@@ -1,0 +1,374 @@
+ash:
+  cifar10:
+    hyperparameters:
+    - 75
+    max_auroc: 0.7836129999999999
+  cifar100:
+    hyperparameters:
+    - 95
+    max_auroc: 0.8316491769547325
+  imagenet:
+    hyperparameters:
+    - 90
+    max_auroc: 0.8389426545660805
+  imagenet200:
+    hyperparameters:
+    - 95
+    max_auroc: 0.9153323879750427
+ebo:
+  cifar10:
+    hyperparameters:
+    - 1
+    max_auroc: 0.9116185
+  cifar100:
+    hyperparameters:
+    - 1
+    max_auroc: 0.8584825102880659
+  imagenet:
+    hyperparameters:
+    - 1
+    max_auroc: 0.8630622802041974
+gen:
+  cifar10:
+    hyperparameters:
+    - 0.01
+    - 10
+    max_auroc: 0.9115955
+  cifar100:
+    hyperparameters:
+    - 0.1
+    - 100
+    max_auroc: 0.8489444444444444
+  imagenet:
+    hyperparameters:
+    - 0.1
+    - 200
+    max_auroc: 0.8714068065796936
+  imagenet200:
+    hyperparameters:
+    - 0.5
+    - 100
+    max_auroc: 0.8966715825297787
+gen_react:
+  imagenet:
+    hyperparameters:
+    - 99
+    - 0.01
+    - 500
+    max_auroc: 0.9159479296653432
+knn:
+  cifar10:
+    hyperparameters:
+    - 50
+    max_auroc: 0.9204349999999999
+  cifar100:
+    hyperparameters:
+    - 50
+    max_auroc: 0.8551656378600823
+neo2_ebo:
+  cifar10:
+    hyperparameters:
+    - 1
+    - 0.1
+    max_auroc: 0.890021
+  imagenet:
+    hyperparameters:
+    - 1
+    - 0.03
+    max_auroc: 0.8872500850822462
+neo_ebo:
+  imagenet:
+    hyperparameters:
+    - 1
+    - 0.005
+    max_auroc: 0.8710652864435622
+  imagenet200:
+    hyperparameters:
+    - 1
+    - 0.0005
+    max_auroc: 0.8888661372660238
+neo_msp:
+  cifar10:
+    hyperparameters:
+    - 0.0001
+    - 10
+    max_auroc: 0.920776
+  cifar100:
+    hyperparameters:
+    - 0.01
+    - 10
+    max_auroc: 0.8422752057613169
+  hyperparameters:
+  - 0.03
+  - 15
+  imagenet:
+    hyperparameters:
+    - 0.05
+    - 10
+    max_auroc: 0.8682878048780487
+  imagenet200:
+    hyperparameters:
+    - 0.0001
+    - 10
+    max_auroc: 0.8873391945547362
+  max_auroc: 0.8866865
+neo_scale:
+  imagenet:
+    hyperparameters:
+    - 80
+    - 0.01
+    max_auroc: 0.9308475326148611
+  imagenet200:
+    hyperparameters:
+    - 75
+    - 0.005
+    max_auroc: 0.916437889960295
+odin:
+  cifar10:
+    hyperparameters:
+    - 10
+    - 0.0014
+    max_auroc: 0.873144
+  cifar100:
+    hyperparameters:
+    - 10
+    - 0.0014
+    max_auroc: 0.8208652263374485
+  imagenet:
+    hyperparameters:
+    - 1000
+    - 0.0028
+    max_auroc: 0.8247477595008509
+  imagenet200:
+    hyperparameters:
+    - 10
+    - 0.0014
+    max_auroc: 0.8974515031196824
+pro2_ent:
+  cifar10:
+    hyperparameters:
+    - 0.001
+    - 1
+    max_auroc: 0.9305900000000001
+  cifar100:
+    hyperparameters:
+    - 0.0005
+    - 7
+    max_auroc: 0.8589958847736626
+  imagenet:
+    hyperparameters:
+    - 1.0e-05
+    - 1
+    max_auroc: 0.809201134429949
+pro2_msp:
+  cifar10:
+    hyperparameters:
+    - 0.0003
+    - 3
+    max_auroc: 0.9225920000000001
+  cifar100:
+    hyperparameters:
+    - 0.001
+    - 5
+    max_auroc: 0.8528580246913581
+  imagenet:
+    hyperparameters:
+    - 0.0005
+    - 3
+    max_auroc: 0.8554929098128191
+pro2_tempscale:
+  cifar10:
+    hyperparameters:
+    - 0.001
+    - 3
+    - 100
+    max_auroc: 0.9148415
+  cifar100:
+    hyperparameters:
+    - 0.001
+    - 5
+    - 10
+    max_auroc: 0.8530838477366255
+  imagenet:
+    hyperparameters:
+    - 1.0e-05
+    - 1
+    - 10
+    max_auroc: 0.8775482699943278
+pro3_msp:
+  cifar10:
+    hyperparameters:
+    - 5.0e-05
+    - 1
+    max_auroc: 0.8933724999999999
+  cifar100:
+    hyperparameters:
+    - 5.0e-05
+    - 1
+    max_auroc: 0.8369094650205761
+pro_ebo:
+  cifar10:
+    hyperparameters:
+    - 0.0001
+    - 1
+    max_auroc: 0.940588
+  cifar100:
+    hyperparameters:
+    - 0.0001
+    - 1
+    max_auroc: 0.8583240740740741
+  imagenet:
+    hyperparameters:
+    - 0.001
+    - 1
+    max_auroc: 0.8777579126488939
+pro_ent:
+  cifar10:
+    hyperparameters:
+    - 0.0005
+    - 3
+    max_auroc: 0.929809
+  cifar100:
+    hyperparameters:
+    - 0.0005
+    - 2
+    max_auroc: 0.8593343621399177
+  imagenet:
+    hyperparameters:
+    - 0.0001
+    - 1
+    max_auroc: 0.8690976744186047
+  imagenet200:
+    hyperparameters:
+    - 0.0001
+    - 1
+    max_auroc: 0.8949472490073738
+pro_gen:
+  cifar10:
+    hyperparameters:
+    - 0.01
+    - 100
+    - 0.001
+    - 3
+    max_auroc: 0.9210815
+  cifar100:
+    hyperparameters:
+    - 0.01
+    - 100
+    - 0.0008
+    - 5
+    max_auroc: 0.859525205761317
+  imagenet:
+    hyperparameters:
+    - 0.01
+    - 100
+    - 0.0003
+    - 1
+    max_auroc: 0.8123760068065797
+pro_msp:
+  cifar10:
+    hyperparameters:
+    - 0.001
+    - 3
+    max_auroc: 0.914563
+  cifar100:
+    hyperparameters:
+    - 0.0005
+    - 2
+    max_auroc: 0.8506820987654321
+  imagenet:
+    hyperparameters:
+    - 0.0001
+    - 3
+    max_auroc: 0.8552580828133863
+  imagenet200:
+    hyperparameters:
+    - 0.0001
+    - 1
+    max_auroc: 0.8867311401020987
+pro_pgddp:
+  cifar10:
+    hyperparameters:
+    - 0.0005
+    - 1
+    max_auroc: 0.760715
+  cifar100:
+    hyperparameters:
+    - 0.001
+    - 1
+    max_auroc: 0.6780586419753086
+  imagenet:
+    hyperparameters:
+    - 0.001
+    - 1
+    max_auroc: 0.5532539421440726
+  imagenet200:
+    hyperparameters:
+    - 0.001
+    - 1
+    max_auroc: 0.640472490073738
+pro_tempscale:
+  cifar10:
+    hyperparameters:
+    - 0.001
+    - 5
+    - 10
+    max_auroc: 0.901548
+  cifar100:
+    hyperparameters:
+    - 0.0001
+    - 3
+    - 10
+    max_auroc: 0.8610699588477366
+  imagenet200:
+    hyperparameters:
+    - 0.0001
+    - 1
+    - 10
+    max_auroc: 0.893036868973341
+pro_vim:
+  cifar100:
+    hyperparameters:
+    - 256
+    - 0.001
+    - 4
+    max_auroc: 0.8109495884773662
+react:
+  cifar10:
+    hyperparameters:
+    - 90
+    max_auroc: 0.9021400000000002
+  cifar100:
+    hyperparameters:
+    - 99
+    max_auroc: 0.8599423868312757
+  imagenet:
+    hyperparameters:
+    - 99
+    max_auroc: 0.890968576290414
+scale:
+  cifar10:
+    hyperparameters:
+    - 85
+    max_auroc: 0.8951089999999999
+  cifar100:
+    hyperparameters:
+    - 65
+    max_auroc: 0.8604711934156377
+  imagenet:
+    hyperparameters:
+    - 80
+    max_auroc: 0.8602363584798639
+  imagenet200:
+    hyperparameters:
+    - 75
+    max_auroc: 0.9167498581962564
+vim:
+  cifar10:
+    hyperparameters:
+    - 256
+    max_auroc: 0.841564
+  cifar100:
+    hyperparameters:
+    - 256
+    max_auroc: 0.8458631687242797

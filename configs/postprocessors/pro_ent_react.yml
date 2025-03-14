@@ -1,0 +1,11 @@
+postprocessor:
+  name: pro_ent_react
+  APS_mode: True
+  postprocessor_args:
+    percentile: 90
+    gamma: 0.1
+    M: 100
+  postprocessor_sweep:
+    percentile_list: [85, 90, 95, 99]
+    noise_level: [0.00005,0.0001,0.0003,0.0005,0.001,0.005,0.01]
+    gd_steps: [1,2,3,5]

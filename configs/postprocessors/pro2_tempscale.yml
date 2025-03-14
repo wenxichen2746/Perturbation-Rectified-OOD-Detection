@@ -1,0 +1,10 @@
+postprocessor:
+  name: pro2_tempscale
+  APS_mode: True
+  postprocessor_args:
+    temperature: 1
+    noise_level: 0.003
+  postprocessor_sweep:
+    noise_level: [0.00001,0.00005,0.0001,0.0005,0.001,0.005,0.001]
+    gd_steps: [1,2,3,5]
+    temperature: [0.01, 0.1,10,100,1000]
