@@ -3,7 +3,7 @@ In this work, we propose a post-hoc method, Perturbation-Rectified OOD detection
 
 <figure>
   <img src="figures/landscapes.png" width="1000">
-  <figcaption>Figure 1: Landscape of score function differ between IND and OOD inputs.
+  <figcaption style="display: block; text-align: center;> Figure 1: Landscape of score function differ between IND and OOD inputs.</figcaption>
 </figure>
 
 
