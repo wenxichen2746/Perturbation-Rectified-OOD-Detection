@@ -3,21 +3,21 @@
 In this work, we propose a post-hoc method, Perturbation-Rectified OOD detection (**PRO**), based on the insight that prediction confidence for OOD inputs is more susceptible to reduction under perturbation than in-distribution (IND) inputs.
 
 <div align="center">
-  <img src="figures/landscapes.png" width="1000">
+  <img src="figures/landscapes.png" width="800">
   <p><strong>Figure 1:</strong> Landscape of score function differs between IND and OOD inputs.</p>
 </div>
 
 Based on the observation, we proposed an adversarial score function that searches for local minimum scores near original inputs by applying gradient descent. 
 
 <div align="center">
-  <img src="figures/pipeline.png" width="500">
+  <img src="figures/pipeline.png" width="800">
   <p><strong>Figure 2:</strong> PRO algorithm pipeline.</p>
 </div>
 
 The perturbation procedure enhances the separability between IND and OOD samples.
 
 <div align="center">
-  <img src="figures/proexample.png" width="500">
+  <img src="figures/proexample.png" width="800">
   <p><strong>Figure 3:</strong> Perturbation minimizes OOD scores while keeping IND scores invariant.</p>
 </div>
 
