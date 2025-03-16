@@ -3,7 +3,7 @@
 In this work, we propose a post-hoc method, Perturbation-Rectified OOD detection (**PRO**), based on the insight that prediction confidence for OOD inputs is more susceptible to reduction under perturbation than in-distribution (IND) inputs.
 
 <div align="center" style="width: 600px; height: 400px; overflow: hidden;">
-  <img src="figures/landscapes.png" width="800" style="width: 1000px; margin-left: -200px;">
+  <img src="figures/landscapes.png" width="700">
   <p><strong>Figure 1:</strong> Landscape of score function differs between IND and OOD inputs.</p>
 </div>
 
