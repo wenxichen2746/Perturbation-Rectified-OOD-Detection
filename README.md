@@ -1,8 +1,8 @@
 # Leveraging Perturbation Robustness to Enhance Out-of-Distribution Detection
-
+## Paper Abstract
 In this work, we propose a post-hoc method, Perturbation-Rectified OOD detection (**PRO**), based on the insight that prediction confidence for OOD inputs is more susceptible to reduction under perturbation than in-distribution (IND) inputs.
 
-<div align="center" style="width: 800px; height: 400px; overflow: hidden;">
+<div align="center" style="width: 600px; height: 400px; overflow: hidden;">
   <img src="figures/landscapes.png" width="800" style="width: 1000px; margin-left: -200px;">
   <p><strong>Figure 1:</strong> Landscape of score function differs between IND and OOD inputs.</p>
 </div>
@@ -10,14 +10,14 @@ In this work, we propose a post-hoc method, Perturbation-Rectified OOD detection
 Based on the observation, we proposed an adversarial score function that searches for local minimum scores near original inputs by applying gradient descent. 
 
 <div align="center">
-  <img src="figures/pipeline.png" width="800">
+  <img src="figures/pipeline.png" width="600">
   <p><strong>Figure 2:</strong> PRO algorithm pipeline.</p>
 </div>
 
 The perturbation procedure enhances the separability between IND and OOD samples.
 
 <div align="center">
-  <img src="figures/proexample.png" width="800">
+  <img src="figures/proexample.png" width="600">
   <p><strong>Figure 3:</strong> Perturbation minimizes OOD scores while keeping IND scores invariant.</p>
 </div>
 
