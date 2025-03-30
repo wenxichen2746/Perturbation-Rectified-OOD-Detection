@@ -1,5 +1,5 @@
 # Perturbation Rectified Out-Of-Distribution (PRO) Detection
-["CVPR Webpage"](https://cvpr.thecvf.com/virtual/2025/poster/32402). | [The link to ArXiv](https://arxiv.org/html/2503.18784v1)
+[CVPR Webpage](https://cvpr.thecvf.com/virtual/2025/poster/32402). | [The link to ArXiv](https://arxiv.org/html/2503.18784v1)
 
 This is the official implementation for our paper **"Leveraging Perturbation Robustness to Enhance Out-of-Distribution Detection"**, accepted in CVPR 2025.
 ## Paper Overview
