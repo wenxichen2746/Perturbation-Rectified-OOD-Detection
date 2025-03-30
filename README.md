@@ -1,5 +1,5 @@
 # Perturbation Rectified Out-Of-Distribution (PRO) Detection
-[The link to ArXiv](https://arxiv.org/html/2503.18784v1)
+["CVPR Webpage"](https://cvpr.thecvf.com/virtual/2025/poster/32402). | [The link to ArXiv](https://arxiv.org/html/2503.18784v1)
 
 This is the official implementation for our paper **"Leveraging Perturbation Robustness to Enhance Out-of-Distribution Detection"**, accepted in CVPR 2025.
 ## Paper Overview
@@ -33,9 +33,6 @@ Our approach further pushes the limit of softmax-based OOD detection and is the 
 
 
 ## Code Implementation
-
-This repository aims to help reproduce the results from our paper for CVPR2025 ["Leveraging Perturbation Robustness to Enhance Out-of-Distribution Detection"](https://cvpr.thecvf.com/virtual/2025/poster/32402).
-
 The repository is modified from the code of two benchmarks: [OpenOOD](https://github.com/Jingkang50/OpenOOD) and [RobustBench](https://github.com/RobustBench/robustbench). For detailed instructions on using these packages, please refer to their original GitHub pages.
 
 ---
