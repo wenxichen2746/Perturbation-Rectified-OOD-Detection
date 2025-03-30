@@ -1,8 +1,8 @@
 # Perturbation Rectified Out-Of-Distribution (PRO) Detection
-The link to [ArXiv](https://arxiv.org/html/2503.18784v1)
+[The link to ArXiv](https://arxiv.org/html/2503.18784v1)
 
 This is the official implementation for our paper **"Leveraging Perturbation Robustness to Enhance Out-of-Distribution Detection"**, accepted in CVPR 2025.
-## Paper Abstract
+## Paper Overview
 In this work, we propose a post-hoc method, Perturbation-Rectified OOD detection (**PRO**), based on the insight that prediction confidence for OOD inputs is more susceptible to reduction under perturbation than in-distribution (IND) inputs.
 
 <div align="center" style="width: 600px; height: 400px; overflow: hidden;">
