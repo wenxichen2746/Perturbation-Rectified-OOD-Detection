@@ -1,5 +1,5 @@
 # Leveraging Perturbation Robustness to Enhance Out-of-Distribution Detection (CVPR 2025)
-[ArXiv](https://arxiv.org/html/2503.18784v1)
+The link to [ArXiv](https://arxiv.org/html/2503.18784v1)
 ## Paper Abstract
 In this work, we propose a post-hoc method, Perturbation-Rectified OOD detection (**PRO**), based on the insight that prediction confidence for OOD inputs is more susceptible to reduction under perturbation than in-distribution (IND) inputs.
 
