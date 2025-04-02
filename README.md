@@ -1,5 +1,5 @@
 # Leveraging Perturbation Robustness to Enhance Out-of-Distribution Detection
-[Accpeted in CVPR 2025.](https://cvpr.thecvf.com/virtual/2025/poster/32402). | [ArXiv](https://arxiv.org/html/2503.18784v1)
+[Accpeted in CVPR 2025](https://cvpr.thecvf.com/virtual/2025/poster/32402) | [ArXiv](https://arxiv.org/html/2503.18784v1)
 
 [Wenxi Chen](https://www.linkedin.com/in/wenxi-chen/), [Raymond Yeh](https://raymond-yeh.com/), [Shaoshuai Mou](https://engineering.purdue.edu/AAE/people/ptProfile?resource_id=124981), [Yan Gu](https://www.thetracelab.com/ygu.html)
 
